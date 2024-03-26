@@ -6,3 +6,11 @@ Practice leetcode questions everyday and post solutions here.
 
 <img width="600" alt="Screenshot 2024-03-26 at 10 52 22 AM" src="https://github.com/sanskruti-raut/Leetcode-Solutions/assets/56341170/7196c148-fc82-46f6-8d8c-da7c59bf5d8f">
 
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in range (len(nums)):
+            for j in range (i+1,len(nums)):
+               if  target - nums[i] == nums[j]:
+                    return i,j
+
